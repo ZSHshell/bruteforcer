@@ -82,12 +82,6 @@ class DirMonster:
 
         try:
             wordlist = open(wordlist_file).readlines()
-
-            for length_tester in wordlist:
-                if len(length_tester) > 8:
-                    word_list.remove(length_tester)
-            # I remove > 8 chars words from the wordlist as you told me
-            
             print('[*] wordlist has been correctly loaded\r')
             print('[*] total items to check: {0}\r'.format(str(len(wordlist))))
             return wordlist
